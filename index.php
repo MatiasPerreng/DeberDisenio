@@ -103,9 +103,9 @@ $Precio = $Huawei->getPrecio();
 echo 'U$S ' . $Precio?></p>
 <button type="button" class="btn btn-dark mt-1" data-bs-toggle="modal" data-bs-target="#ModalFormTres" data-bs-whatever="@mdo" style="color:rgb(250, 250, 250); border-radius:17px;">Comprar</button>
 </div>
-</div>
 
-</section>
+
+
 
 <!--MODAL PARA COMPRAR SAMSUNG-->
 
@@ -373,13 +373,13 @@ document.write(`<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <
 
 </script>
 
-
+<!-- FOOTER -->
 
     <footer id="footer" class="container-fluid d-flex justify-content-center bg-dark">
         <p class="text-light p-4">Pagina hecha por Matias Perreng, ITI ©2022</p>
     </footer>
-
- 
+    
+    </section>
 </body>
 <script src="js/bootstrap.min.js"></script>
 
