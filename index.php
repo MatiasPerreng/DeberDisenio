@@ -42,11 +42,17 @@ transform: scale(1.3);
 }
 #footer{
     height: 11vh;
-    position: fixed;
+    position:fixed;
     left: 0;
     bottom: 0;
     width: 100%;
-    display: flex;
+  }
+  @media (max-width: 991px) {
+    #footer{
+    height: 11vh;
+    position:relative;
+ 
+  }   
    
 }
 input[type=number]::-webkit-inner-spin-button, 
@@ -70,7 +76,7 @@ input[type=number]::-webkit-outer-spin-button {
 </header>
 <section id="galeria" class="container ">
 <div class="row gap-3 text-center">
-<div class="col pb-3" style="border:1px outset; background-color:rgb(250, 250, 250);">
+<div class="col-lg-4 col-sm-12 pb-3" style="border:1px outset; background-color:rgb(250, 250, 250);">
 <img src="imgs/Samsung.png" alt="">
 <p class="mb-1">Samsung Galaxy A32</p>
 <p class="precio mb-0"><?php include_once("celular.php");
@@ -88,7 +94,7 @@ $Precio = $Xiaomi->getPrecio();
 echo 'U$S ' . $Precio?></p>
 <button type="button" class="btn btn-dark mt-1" data-bs-toggle="modal" data-bs-target="#ModalFormDos" data-bs-whatever="@mdo" style="color:rgb(250, 250, 250); border-radius:17px;">Comprar</button>
 </div>
-<div class="col pb-3" style="border:1px outset; background-color:rgb(250, 250, 250);">
+<div class="col-lg-4 col-sm-12 pb-3" style="border:1px outset; background-color:rgb(250, 250, 250);">
 <img src="imgs/Huawei.png" alt="">
 <p class="mb-1">HUAWEI Y8P 2020</p>
 <p class="precio mb-0"><?php include_once("celular.php");
@@ -97,7 +103,9 @@ $Precio = $Huawei->getPrecio();
 echo 'U$S ' . $Precio?></p>
 <button type="button" class="btn btn-dark mt-1" data-bs-toggle="modal" data-bs-target="#ModalFormTres" data-bs-whatever="@mdo" style="color:rgb(250, 250, 250); border-radius:17px;">Comprar</button>
 </div>
+</div>
 
+</section>
 
 <!--MODAL PARA COMPRAR SAMSUNG-->
 
@@ -139,8 +147,8 @@ echo 'U$S ' . $Precio?></p>
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
                         <label class="form-check-label" for="flexCheckIndeterminate">Solicitar envio por U$S 5.00</label>
                   </div>
-                  <div class="col-6 mt-3" style="border:1px inset;">
-                    <label for="" style="font-size:14px; padding:8px;"><b>La transferencia bancaria tiene una bonificación del 10% sobre el precio del equipo</b></label>
+                  <div class="col-12" style="border:1px outset; margin-top:14%; background-color:rgb(250, 250, 250);">
+                    <label for="" style="font-size:15px; padding:8px;"><b>La transferencia bancaria tiene una bonificación del 10% sobre el precio del equipo</b></label>
                   </div>
             </div> 
                 </div>
@@ -193,8 +201,8 @@ echo 'U$S ' . $Precio?></p>
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateUno">
                         <label class="form-check-label" for="flexCheckIndeterminate">Solicitar envio por U$S 5.00</label>
                   </div>
-                  <div class="col-6 mt-3" style="border:1px inset;">
-                    <label for="" style="font-size:14px; padding:8px;"><b>La transferencia bancaria tiene una bonificación del 10% sobre el precio del equipo</b></label>
+                  <div class="col-12" style="border:1px outset; margin-top:14%; background-color:rgb(250, 250, 250);">
+                    <label for="" style="font-size:15px; padding:8px;"><b>La transferencia bancaria tiene una bonificación del 10% sobre el precio del equipo</b></label>
                   </div>
             </div> 
                 </div>
@@ -247,8 +255,8 @@ echo 'U$S ' . $Precio?></p>
                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminateDos">
                         <label class="form-check-label" for="flexCheckIndeterminate">Solicitar envio por U$S 5.00</label>
                   </div>
-                  <div class="col-6 mt-3" style="border:1px inset;">
-                    <label for="" style="font-size:14px; padding:8px;"><b>La transferencia bancaria tiene una bonificación del 10% sobre el precio del equipo</b></label>
+                  <div class="col-12" style="border:1px outset; margin-top:14%; background-color:rgb(250, 250, 250);">
+                    <label for="" style="font-size:15px; padding:8px;"><b>La transferencia bancaria tiene una bonificación del 10% sobre el precio del equipo</b></label>
                   </div>
             </div> 
                 </div>
@@ -371,7 +379,7 @@ document.write(`<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <
         <p class="text-light p-4">Pagina hecha por Matias Perreng, ITI ©2022</p>
     </footer>
 
-</section>
+ 
 </body>
 <script src="js/bootstrap.min.js"></script>
 
